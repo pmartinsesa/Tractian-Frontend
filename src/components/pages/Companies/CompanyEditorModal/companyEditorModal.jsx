@@ -32,7 +32,7 @@ export const EditorModal = (props) => {
             
             update(newCompany)
                 .then(res => {
-                    props.callbackParent(res.data.message);
+                    props.callbackParent(res.data);
                 })
         }
     };
